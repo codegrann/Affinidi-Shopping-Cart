@@ -14,7 +14,15 @@ function UserDashboard() {
     city: profile?.locality || "",
     country: profile?.country || "",
   });
-  return <div>hello there</div>;
+  return (
+    <div>
+      <table>
+        <tr>
+          <td>{userData.firstName}</td>
+        </tr>
+      </table>
+    </div>
+  );
 }
 
 export default UserDashboard;
