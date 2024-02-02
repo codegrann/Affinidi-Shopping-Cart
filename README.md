@@ -1,3 +1,4 @@
 # Affinidi-Shopping-Cart
 
-Tailwindcss
+added product category
+added products
