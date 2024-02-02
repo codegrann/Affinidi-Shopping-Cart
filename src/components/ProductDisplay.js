@@ -46,16 +46,14 @@ const ourProducts = [
   },
 ];
 const ProductDisplay = ({ addToCart }) => {
-  const [category, setCategory] = useState("all");
+  const [category, setCategory] = useState("");
   const [products, setProducts] = useState(ourProducts);
   useEffect(() => {
     filterProducts();
   }, [category]);
 
   function filterProducts() {
-    if (category === "all") {
-      setProducts(products.filter((product) => product.category === "all"));
-    } else if (category === "dressing") {
+    if (category === "dressing") {
       setProducts(
         products.filter((product) => product.category === "dressing")
       );
@@ -73,16 +71,14 @@ const ProductDisplay = ({ addToCart }) => {
     <div className="">
       <div className="category-filter">
         <label htmlFor="categry">Category:</label>
-        <select name="category" id="category">
-          <option value="all" onSelect={() => setCategory("all")}>
-            All
-          </option>
-          <option value="dressing" onSelect={() => setCategory("dressing")}>
-            Dressing
-          </option>
-          <option value="furniture" onSelect={() => setCategory("furniture")}>
-            Furniture
-          </option>
+        <select
+          name="category"
+          id="category"
+          onChange={(e) => setCategory(e.target.value)}
+        >
+          <option value="all">All</option>
+          <option value="dressing">Dressing</option>
+          <option value="furniture">Furniture</option>
         </select>
       </div>
       <div className="ProductDisplay">
