@@ -47,12 +47,13 @@ const Header = () => {
         </div>
       );
     }
+    const handleProfile = () => {
+      navigate("/profile");
+    };
     if (profile) {
       return (
         <div>
-          <span onClick={navigate("/profile")}>
-            Welcome, {profile.givenName}
-          </span>
+          <span onClick={handleProfile}>Welcome, {profile.givenName}</span>
           <button onClick={logout}>Logout</button>
         </div>
       );
