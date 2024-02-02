@@ -49,6 +49,11 @@ const ProductDisplay = ({ addToCart }) => {
 
   return (
     <div className="ProductDisplay">
+      <label htmlFor="categry">Category</label>
+      <select name="category" id="category">
+        <option value="dressing">Dressing</option>
+        <option value="furniture">Furniture</option>
+      </select>
       {products.map((product) => (
         <div key={product.id} className="ProductItem">
           <img src={product.imageUrl} alt={product.name} />
