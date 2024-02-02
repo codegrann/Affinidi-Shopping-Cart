@@ -3,10 +3,34 @@ import "./ProductDisplay.css";
 
 const ProductDisplay = ({ addToCart }) => {
   const products = [
-    { id: 1, name: "Hoodie", price: 10, imageUrl: "hoodie.png" },
-    { id: 2, name: "T-Shirt", price: 15, imageUrl: "tee.png" },
-    { id: 3, name: "Hoodie", price: 10, imageUrl: "hoodie.png" },
-    { id: 4, name: "Hoodie", price: 10, imageUrl: "hoodie.png" },
+    {
+      id: 1,
+      name: "Hoodie",
+      price: 10,
+      imageUrl: "hoodie.png",
+      category: "dressing",
+    },
+    {
+      id: 2,
+      name: "T-Shirt",
+      price: 15,
+      imageUrl: "tee.png",
+      category: "dressing",
+    },
+    {
+      id: 3,
+      name: "Hoodie",
+      price: 10,
+      imageUrl: "hoodie.png",
+      category: "dressing",
+    },
+    {
+      id: 4,
+      name: "T-Shirt",
+      price: 10,
+      imageUrl: "tee.png",
+      category: "dressing",
+    },
   ];
 
   return (
