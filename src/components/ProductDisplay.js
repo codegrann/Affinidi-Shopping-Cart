@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProductDisplay.css";
 
 const ProductDisplay = ({ addToCart }) => {
+  const [category, setCategory] = useState("all");
   const products = [
     {
       id: 1,
@@ -47,23 +48,41 @@ const ProductDisplay = ({ addToCart }) => {
     },
   ];
 
+  if (category === "all") {
+    products.filter((product) => product.category === "all");
+  } else if (category === "dressing") {
+    products.filter((product) => product.category === "dressing");
+  } else if (category === "furniture") {
+    products.filter((product) => product.category === "furniture");
+  }
+  // products.filter((product) => product.category === "dressing");
+
   return (
-    <div className="ProductDisplay">
-      <div>
-        <label htmlFor="categry">Category</label>
+    <div className="">
+      <div className="category-filter">
+        <label htmlFor="categry">Category:</label>
         <select name="category" id="category">
-          <option value="dressing">Dressing</option>
-          <option value="furniture">Furniture</option>
+          <option value="all" onClick={() => setCategory("all")}>
+            All
+          </option>
+          <option value="dressing" onSelect={() => setCategory("dressing")}>
+            Dressing
+          </option>
+          <option value="furniture" onClick={() => setCategory("furniture")}>
+            Furniture
+          </option>
         </select>
       </div>
-      {products.map((product) => (
-        <div key={product.id} className="ProductItem">
-          <img src={product.imageUrl} alt={product.name} />
-          <h2>{product.name}</h2>
-          <p>${product.price}</p>
-          <button onClick={() => addToCart(product)}>Add to Cart</button>
-        </div>
-      ))}
+      <div className="ProductDisplay">
+        {products.map((product) => (
+          <div key={product.id} className="ProductItem">
+            <img src={product.imageUrl} alt={product.name} />
+            <h2>{product.name}</h2>
+            <p>${product.price}</p>
+            <button onClick={() => addToCart(product)}>Add to Cart</button>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
