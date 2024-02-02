@@ -6,6 +6,7 @@ import ProductDisplay from "./components/ProductDisplay";
 import Modal from "./components/Modal";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
+import UserDashboard from "./components/UserDashboard";
 import "./App.css";
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
               path="/checkout"
               element={<Checkout clearCart={clearCart} />}
             />
+            <Route path="/profile" element={<UserDashboard />} />
           </Routes>
         </div>
       </Router>

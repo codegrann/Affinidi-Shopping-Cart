@@ -53,7 +53,9 @@ const ProductDisplay = ({ addToCart }) => {
   }, [category]);
 
   function filterProducts() {
-    if (category === "dressing") {
+    if (category === "all") {
+      setProducts(ourProducts);
+    } else if (category === "dressing") {
       setProducts(
         products.filter((product) => product.category === "dressing")
       );
