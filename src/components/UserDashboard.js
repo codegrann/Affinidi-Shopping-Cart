@@ -13,10 +13,15 @@ function UserDashboard() {
     postalCode: profile?.postalCode || "",
     city: profile?.locality || "",
     country: profile?.country || "",
+    profileUrl: profile?.imageURI || "",
   });
   return (
     <div>
+      <img src={userData.imageURI}></img>
       <table>
+        <tr>
+          <th>{userData.phoneNumber}</th>
+        </tr>
         <tr>
           <td>{userData.firstName}</td>
         </tr>
