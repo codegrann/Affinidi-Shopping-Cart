@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import UserContext from "../contexts/UserContext";
+import { useNavigate } from "react-router-dom";
 import {
   AffinidiLoginButton,
   useAffinidiProfile,
@@ -13,6 +14,7 @@ const Header = () => {
     authCompleteUrl: "/api/affinidi-auth/complete",
   });
 
+  const navigate = useNavigate();
   const [localProfile, setLocalProfile] = useState(null);
 
   useEffect(() => {
@@ -48,7 +50,9 @@ const Header = () => {
     if (profile) {
       return (
         <div>
-          <span>Welcome, {profile.givenName}</span>
+          <span onClick={navigate("/profile")}>
+            Welcome, {profile.givenName}
+          </span>
           <button onClick={logout}>Logout</button>
         </div>
       );
