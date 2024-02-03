@@ -13,20 +13,29 @@ function UserDashboard() {
     postalCode: profile?.postalCode || "",
     city: profile?.locality || "",
     country: profile?.country || "",
-    profileUrl: profile?.picture || "",
+    profileImg: profile?.picture || "",
   });
   return (
     <div>
       <img src="/cart.png"></img>
-      <img src={userData.profileUrl} alt="profile image" />
-      <table>
-        <tr>
-          <th>{userData.phoneNumber}</th>
-        </tr>
-        <tr>
-          <td>{userData.firstName}</td>
-        </tr>
-      </table>
+      <img src={userData.profileImg} alt="profile image" />
+      <form>
+        <label htmlFor="name">
+          <input type="text" id="name"></input>
+        </label>
+        <label htmlFor="">
+          <input type="" id=""></input>
+        </label>
+        <label htmlFor="">
+          <input type="" id=""></input>
+        </label>
+        <label htmlFor="">
+          <input type="" id=""></input>
+        </label>
+        <label htmlFor="">
+          <input type="" id=""></input>
+        </label>
+      </form>
     </div>
   );
 }
