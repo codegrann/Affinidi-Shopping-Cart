@@ -9,19 +9,19 @@ function Footer() {
         <ul className="FooterList links">
           <li>
             <img src="/linkedin.png" alt="Linkedin" />
-            <a>Linkedin</a>
+            <a href="#">Linkedin</a>
           </li>
           <li>
             <img src="/twitter.jpeg" alt="Twitter" />
-            <a>Twitter</a>
+            <a href="#">Twitter</a>
           </li>
           <li>
             <img src="/facebook.png" alt="Facebook" />
-            <a>Facebook</a>
+            <a href="#">Facebook</a>
           </li>
           <li>
             <img src="/mail.jpeg" alt="Mail" />
-            <a>Mail</a>
+            <a href="#">Mail</a>
           </li>
         </ul>
       </div>
