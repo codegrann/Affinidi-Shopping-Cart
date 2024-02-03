@@ -56,10 +56,12 @@ const ProductDisplay = ({ addToCart }) => {
     if (category === "all") {
       setProducts(ourProducts);
     } else if (category === "dressing") {
+      setProducts(products);
       setProducts(
         products.filter((product) => product.category === "dressing")
       );
     } else if (category === "furniture") {
+      setProducts(products);
       setProducts(
         products.filter((product) => product.category === "furniture")
       );
