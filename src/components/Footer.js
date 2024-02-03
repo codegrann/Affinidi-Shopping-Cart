@@ -11,20 +11,26 @@ function Footer() {
           <li>
             <Link to="/" className="FooterLink">
               <img src="/linkedin.png" alt="Linkedin" />
-              <a href="#">Linkedin</a>
+              Linkedin
             </Link>
           </li>
           <li>
-            <img src="/twitter.jpeg" alt="Twitter" />
-            <a href="#">Twitter</a>
+            <Link to="/" className="FooterLink">
+              <img src="/twitter.jpeg" alt="Twitter" />
+              Twitter
+            </Link>
           </li>
           <li>
-            <img src="/facebook.png" alt="Facebook" />
-            <a href="#">Facebook</a>
+            <Link to="/" className="FooterLink">
+              <img src="/facebook.png" alt="Facebook" />
+              Facebook
+            </Link>
           </li>
           <li>
-            <img src="/mail.jpeg" alt="Mail" />
-            <a href="#">Mail</a>
+            <Link to="/" className="FooterLink">
+              <img src="/mail.jpeg" alt="Mail" />
+              Mail
+            </Link>
           </li>
         </ul>
       </div>
