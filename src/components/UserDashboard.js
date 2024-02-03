@@ -15,13 +15,16 @@ function UserDashboard() {
     country: profile?.country || "",
     profileImg: profile?.picture || "",
   });
+  let fullName = `${userData.firstName}  ${userData.lastName}`;
   return (
     <div>
       <img src="/cart.png"></img>
       <img src={userData.profileImg} alt="profile image" />
+      {userData.firstName}
       <form>
         <label htmlFor="name">
-          <input type="text" id="name" value={userData.firstName}></input>
+          Full Name: {userData.firstName}
+          <input type="text" id="name" value={fullName}></input>
         </label>
         <label htmlFor="">
           <input type="" id=""></input>
