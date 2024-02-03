@@ -21,7 +21,7 @@ function UserDashboard() {
       <img src={userData.profileImg} alt="profile image" />
       <form>
         <label htmlFor="name">
-          <input type="text" id="name"></input>
+          <input type="text" id="name" value={userData.firstName}></input>
         </label>
         <label htmlFor="">
           <input type="" id=""></input>
