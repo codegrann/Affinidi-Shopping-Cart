@@ -2,6 +2,8 @@ import React, { useState, useContext } from "react";
 import UserContext from "../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
 
+import "./UserDashboard.css";
+
 function UserDashboard() {
   const { profile } = useContext(UserContext);
   const [userData, setUserData] = useState({
@@ -20,9 +22,8 @@ function UserDashboard() {
   let address = ` ${userData.postalCode}, ${userData.address}`;
   return (
     <div>
-      <img src="/cart.png"></img>
       <img src={userData.profileImg} alt="profile image" />
-      <form>
+      <form className="user-info">
         <label htmlFor="name">
           Full Name:
           <input type="text" id="name" value={fullName}></input>
@@ -40,6 +41,7 @@ function UserDashboard() {
           <input type="text" id="locality" value={locality}></input>
         </label>
         <label htmlFor="address">
+          Address:
           <input type="text" id="address" value={address}></input>
         </label>
       </form>
