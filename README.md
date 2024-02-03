@@ -6,3 +6,4 @@ footer
 
 user profile
 user image
+currency converter

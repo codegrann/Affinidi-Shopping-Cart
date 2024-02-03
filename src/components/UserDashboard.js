@@ -13,11 +13,12 @@ function UserDashboard() {
     postalCode: profile?.postalCode || "",
     city: profile?.locality || "",
     country: profile?.country || "",
-    profileUrl: profile?.imageURI || "",
+    profileUrl: profile?.picture || "",
   });
   return (
     <div>
-      <img src={userData.imageURI}></img>
+      <img src="/cart.png"></img>
+      <img src={userData.profileUrl} alt="profile image" />
       <table>
         <tr>
           <th>{userData.phoneNumber}</th>
