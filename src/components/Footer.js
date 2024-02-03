@@ -9,7 +9,7 @@ function Footer() {
         <h3 className="FooterHead">Contact us</h3>
         <ul className="FooterList links">
           <li>
-            <Link to="/">
+            <Link to="/" className="FooterLink">
               <img src="/linkedin.png" alt="Linkedin" />
               <a href="#">Linkedin</a>
             </Link>

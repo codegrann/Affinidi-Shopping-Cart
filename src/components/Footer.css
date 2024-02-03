@@ -11,7 +11,8 @@
 .Footer h3 {
   color: #03377f;
 }
-.FooterList li {
+
+.FooterLink {
   font-family: serif, Cambria, Cochin, Georgia, Times, "Times New Roman";
   font-size: 10pt;
   list-style: none;
