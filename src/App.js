@@ -7,6 +7,7 @@ import Modal from "./components/Modal";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
 import UserDashboard from "./components/UserDashboard";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -65,6 +66,7 @@ function App() {
             />
             <Route path="/profile" element={<UserDashboard />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
     </UserContext.Provider>

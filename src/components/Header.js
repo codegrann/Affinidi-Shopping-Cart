@@ -71,6 +71,8 @@ const Header = () => {
         {renderLoginState()}
         <Link to="/cart" className="CartIcon">
           <img src="/cart.png" alt="Cart" />
+        </Link>
+        <Link to="/profile" className="ProfileIcon">
           <img src="/profile.png" alt="profile status" />
         </Link>
       </nav>

@@ -1,0 +1,30 @@
+.Footer {
+  max-width: 1200px;
+  background-color: #ccc;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 55vh;
+}
+
+.Footer h3 {
+  color: #03377f;
+}
+.FooterList li {
+  font-family: serif, Cambria, Cochin, Georgia, Times, "Times New Roman";
+  font-size: 10pt;
+  list-style: none;
+}
+.FooterList li img {
+  width: 20px;
+  border-radius: 50%;
+}
+.FooterList li :hover {
+  /* cursor: pointer; */
+}
+@media (max-width: 450px) {
+  .Footer {
+    flex-direction: column;
+  }
+}
