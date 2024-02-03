@@ -22,8 +22,12 @@ function UserDashboard() {
   let address = ` ${userData.postalCode}, ${userData.address}`;
   return (
     <div>
-      <img src={userData.profileImg} alt="profile image" />
+      <div>
+        <img src="/cart.png" className="profile-img" alt="profile image" />
+      </div>
+      {/* <img src={userData.profileImg} alt="profile image" /> */}
       <form className="user-info">
+        <img src="/cart.png" className="profile-img" alt="profile image" />
         <label htmlFor="name">
           Full Name:
           <input type="text" id="name" value={fullName} disabled></input>
