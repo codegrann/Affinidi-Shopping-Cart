@@ -11,38 +11,39 @@ const ourProducts = [
   },
   {
     id: 2,
-    name: "T-Shirt",
-    price: 15,
-    imageUrl: "tee.png",
-    category: "dressing",
-  },
-  {
-    id: 3,
-    name: "Short Trouser",
-    price: 10,
-    imageUrl: "short.jpeg",
-    category: "dressing",
-  },
-  {
-    id: 4,
     name: "Chair",
     price: 20,
     imageUrl: "chair.jpeg",
     category: "furniture",
   },
   {
-    id: 5,
+    id: 3,
+    name: "T-Shirt",
+    price: 15,
+    imageUrl: "tee.png",
+    category: "dressing",
+  },
+
+  {
+    id: 4,
     name: "Bed",
     price: 135,
     imageUrl: "bed.jpeg",
     category: "furniture",
   },
   {
-    id: 6,
+    id: 5,
     name: "Shelf",
     price: 95,
     imageUrl: "shelf.jpeg",
     category: "furniture",
+  },
+  {
+    id: 6,
+    name: "Short Trouser",
+    price: 10,
+    imageUrl: "short.jpeg",
+    category: "dressing",
   },
 ];
 const ProductDisplay = ({ addToCart }) => {
