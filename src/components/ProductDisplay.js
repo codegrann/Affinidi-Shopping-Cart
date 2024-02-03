@@ -57,14 +57,14 @@ const ProductDisplay = ({ addToCart }) => {
       setProducts(ourProducts);
     } else if (category === "dressing") {
       setProducts(
-        products.filter((product) => product.category === "dressing")
+        ourProducts.filter((product) => product.category === "dressing")
       );
     } else if (category === "furniture") {
       setProducts(
-        products.filter((product) => product.category === "furniture")
+        ourProducts.filter((product) => product.category === "furniture")
       );
     }
-    return products;
+    // return products;
   }
   // filterProducts();
   // products.filter((product) => product.category === "dressing");
