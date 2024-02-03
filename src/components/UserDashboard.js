@@ -26,23 +26,28 @@ function UserDashboard() {
       <form className="user-info">
         <label htmlFor="name">
           Full Name:
-          <input type="text" id="name" value={fullName}></input>
+          <input type="text" id="name" value={fullName} disabled></input>
         </label>
         <label htmlFor="email">
           Email:
-          <input type="email" id="email" value={userData.email}></input>
+          <input
+            type="email"
+            id="email"
+            value={userData.email}
+            disabled
+          ></input>
         </label>
         <label htmlFor="phone">
           Phone Number:
-          <input type="text" id="phone" value={userData.phone}></input>
+          <input type="text" id="phone" value={userData.phone} disabled></input>
         </label>
         <label htmlFor="locality">
           Locality:
-          <input type="text" id="locality" value={locality}></input>
+          <input type="text" id="locality" value={locality} disabled></input>
         </label>
         <label htmlFor="address">
           Address:
-          <input type="text" id="address" value={address}></input>
+          <input type="text" id="address" value={address} disabled></input>
         </label>
       </form>
     </div>
