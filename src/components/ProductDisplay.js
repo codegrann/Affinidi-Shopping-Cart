@@ -64,10 +64,7 @@ const ProductDisplay = ({ addToCart }) => {
         ourProducts.filter((product) => product.category === "furniture")
       );
     }
-    // return products;
   }
-  // filterProducts();
-  // products.filter((product) => product.category === "dressing");
 
   return (
     <div className="">
