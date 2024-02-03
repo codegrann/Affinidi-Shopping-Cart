@@ -16,24 +16,26 @@ function UserDashboard() {
     profileImg: profile?.picture || "",
   });
   let fullName = `${userData.firstName}  ${userData.lastName}`;
+  let locality = `${userData.city}, ${userData.country}`;
   return (
     <div>
       <img src="/cart.png"></img>
       <img src={userData.profileImg} alt="profile image" />
-      {userData.firstName}
       <form>
         <label htmlFor="name">
-          Full Name: {userData.firstName}
+          Full Name:
           <input type="text" id="name" value={fullName}></input>
         </label>
-        <label htmlFor="">
-          <input type="" id=""></input>
+        <label htmlFor="email">
+          Email:
+          <input type="email" id="email" value={userData.email}></input>
         </label>
-        <label htmlFor="">
-          <input type="" id=""></input>
+        <label htmlFor="phone">
+          Phone Number:
+          <input type="text" id="phone" value={userData.phone}></input>
         </label>
-        <label htmlFor="">
-          <input type="" id=""></input>
+        <label htmlFor="locality">
+          <input type="text" id="locality" value={locality}></input>
         </label>
         <label htmlFor="">
           <input type="" id=""></input>
