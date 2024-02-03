@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -8,8 +9,10 @@ function Footer() {
         <h3 className="FooterHead">Contact us</h3>
         <ul className="FooterList links">
           <li>
-            <img src="/linkedin.png" alt="Linkedin" />
-            <a href="#">Linkedin</a>
+            <Link to="/">
+              <img src="/linkedin.png" alt="Linkedin" />
+              <a href="#">Linkedin</a>
+            </Link>
           </li>
           <li>
             <img src="/twitter.jpeg" alt="Twitter" />
