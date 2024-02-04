@@ -21,22 +21,22 @@ function Invoice({ cartItems }) {
 
     // Add product details
     doc.setFontSize(12);
-    cartItems.map((product) => {
-      doc.text(`Product: ${product.name}`, 10, y);
+    cartItems.forEach((item) => {
+      doc.text(`Product: ${item.name}`, 10, y);
       y += 8;
-      doc.text(`Quantity: ${product.quantity}`, 10, y);
+      doc.text(`Quantity: ${item.quantity}`, 10, y);
       y += 8;
-      doc.text(`Price: $${product.price.toFixed(2)}`, 10, y);
+      doc.text(`Price: $${item.price.toFixed(2)}`, 10, y);
       y += 10;
       // Calculate total price for the product
-      var totalPrice = product.quantity * product.price;
+      var totalPrice = item.quantity * item.price;
       doc.text(`Total: $${totalPrice.toFixed(2)}`, 10, y);
       y += 15; // Add some space between products
     });
 
     // Calculate and add the final total
     var finalTotal = cartItems.reduce(
-      (total, product) => total + product.quantity * product.price,
+      (total, item) => total + item.quantity * item.price,
       0
     );
     doc.text(`Final Total: $${finalTotal.toFixed(2)}`, 10, y + 10);
