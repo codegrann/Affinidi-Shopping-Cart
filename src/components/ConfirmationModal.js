@@ -1,6 +1,6 @@
 import React from "react";
 import "./Modal.css";
-import Invoice from "./ConfirmInvoice";
+import Invoice from "./Invoice";
 
 const ConfirmationModal = ({ closeModal }) => {
   return (
