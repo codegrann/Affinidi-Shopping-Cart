@@ -8,21 +8,27 @@ function Invoice({ cartItems }) {
     const doc = new jsPDF();
     var y = 10;
 
-    // Add content to the PDF
-
     doc.setFontSize(18);
     doc.text("Invoice", 10, y);
     y += 10;
 
+    var consolidatedItems = new Map();
+
+    cartItems.forEach((item) => {
+      if (!consolidatedItems.has(item.name)) {
+        consolidatedItems.set(item.name, {
+          name: item.name,
+          quantity: item.quantity,
+          price: item.price,
+        });
+      } else {
+        consolidatedItems.get(item.name).quantity += item.quantity;
+      }
+    });
+
     // Add product details
     doc.setFontSize(12);
-    cartItems.forEach((item) => {
-      doc.text("Invoice", 10, 10);
-      doc.text(`Transaction ID: ${item.name}`, 10, 20);
-      doc.text(`Amount: $${item.price}`, 10, 30);
-      doc.text(`Date: ${item.quantity}`, 10, 40);
-      doc.text(`Status: ${item.name}`, 10, 50);
-
+    consolidatedItems.forEach((item) => {
       doc.text(`Product: ${item.name}`, 10, y);
       y += 8;
       doc.text(`Quantity: ${item.quantity}`, 10, y);
