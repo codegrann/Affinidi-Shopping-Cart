@@ -62,7 +62,7 @@ function App() {
             <Route path="/cart" element={<Cart cartItems={cartItems} />} />
             <Route
               path="/checkout"
-              element={<Checkout clearCart={clearCart} />}
+              element={<Checkout clearCart={clearCart} cartItems={cartItems} />}
             />
             <Route path="/profile" element={<UserDashboard />} />
           </Routes>

@@ -2,9 +2,10 @@ import React, { useState, useContext } from "react";
 import UserContext from "../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
 import ConfirmationModal from "./ConfirmationModal";
+import Invoice from "./Invoice";
 import "./Checkout.css";
 
-const Checkout = ({ clearCart }) => {
+const Checkout = ({ clearCart, cartItems }) => {
   const { profile } = useContext(UserContext);
   const [showConfirmationModal, setShowConfirmationModal] = useState(false);
   const navigate = useNavigate();
@@ -125,7 +126,10 @@ const Checkout = ({ clearCart }) => {
         </form>
       </div>
       {showConfirmationModal && (
-        <ConfirmationModal closeModal={closeConfirmationModal} />
+        <>
+          <ConfirmationModal closeModal={closeConfirmationModal} />
+          <Invoice cartItems={cartItems} />
+        </>
       )}
     </div>
   );
