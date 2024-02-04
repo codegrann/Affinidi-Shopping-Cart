@@ -7,3 +7,5 @@ user profile
 invoice
 
 user image
+paypal button
+check if logged in to show profile icon

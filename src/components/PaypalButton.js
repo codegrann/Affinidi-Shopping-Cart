@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import jsPDF from "jspdf";
 import Invoice from "./Invoice";
 
-export default function Paypal() {
+export default function Paypal({ totalAmount }) {
   const paypal = useRef();
   const [transactionData, setTransactionData] = useState(null);
 
@@ -47,6 +47,7 @@ export default function Paypal() {
         ref={paypal}
         style={{
           height: "140px",
+          width: "35%",
           overflowY: "hidden",
         }}
       ></div>
