@@ -15,9 +15,11 @@ const Cart = ({ cartItems }) => {
     );
   };
 
+  // const goToInvoice = () => {
+  // setShowInvoice(true);
+  // };
   const goToCheckout = () => {
-    setShowInvoice(true);
-    // navigate("/checkout");
+    navigate("/checkout");
   };
 
   return (
@@ -59,7 +61,7 @@ const Cart = ({ cartItems }) => {
       <button onClick={goToCheckout} disabled={cartItems.length === 0}>
         Go to Checkout
       </button>
-      {showInvoice && <Invoice cartItems={cartItems} />}
+      <Invoice cartItems={cartItems} />
     </div>
   );
 };
