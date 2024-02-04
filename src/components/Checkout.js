@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import UserContext from "../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
 import ConfirmationModal from "./ConfirmationModal";
+import ConfirmInvoice from "./ConfirmInvoice";
 import Invoice from "./Invoice";
 import "./Checkout.css";
 
@@ -128,7 +129,7 @@ const Checkout = ({ clearCart, cartItems }) => {
       {showConfirmationModal && (
         <>
           <ConfirmationModal closeModal={closeConfirmationModal} />
-          <Invoice cartItems={cartItems} />
+          {/* <ConfirmInvoice closeModal={closeConfirmationModal} /> */}
         </>
       )}
     </div>
