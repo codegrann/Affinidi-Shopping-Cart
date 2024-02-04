@@ -1,6 +1,7 @@
 // Invoice.js
 import React from "react";
 import jsPDF from "jspdf";
+import { generatePath } from "react-router-dom";
 
 function Invoice({ cartItems }) {
   const generateInvoice = () => {
@@ -51,5 +52,5 @@ function Invoice({ cartItems }) {
     </div>
   );
 }
-
+export const generateInvoice = generateInvoice;
 export default Invoice;
