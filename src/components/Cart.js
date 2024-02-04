@@ -1,11 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Invoice from "./Invoice";
 import "./Cart.css";
 
 const Cart = ({ cartItems }) => {
-  const [showInvoice, setShowInvoice] = useState(false);
   const navigate = useNavigate();
 
   const getTotalPrice = () => {
@@ -15,9 +13,6 @@ const Cart = ({ cartItems }) => {
     );
   };
 
-  // const goToInvoice = () => {
-  // setShowInvoice(true);
-  // };
   const goToCheckout = () => {
     navigate("/checkout");
   };
