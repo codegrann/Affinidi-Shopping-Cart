@@ -1,7 +1,6 @@
 // Invoice.js
 import React from "react";
 import jsPDF from "jspdf";
-import { generatePath } from "react-router-dom";
 
 function Invoice({ cartItems }) {
   const generateInvoice = () => {
@@ -10,11 +9,6 @@ function Invoice({ cartItems }) {
     var y = 10;
 
     // Add content to the PDF
-    // doc.text("Invoice", 10, 10);
-    // doc.text(`Transaction ID: ${cartItems}`, 10, 20);
-    // doc.text(`Amount: $${cartItems}`, 10, 30);
-    // doc.text(`Date: ${cartItems}`, 10, 40);
-    // doc.text(`Status: ${cartItems}`, 10, 50);
 
     doc.setFontSize(18);
     doc.text("Invoice", 10, y);
@@ -23,6 +17,12 @@ function Invoice({ cartItems }) {
     // Add product details
     doc.setFontSize(12);
     cartItems.forEach((item) => {
+      doc.text("Invoice", 10, 10);
+      doc.text(`Transaction ID: ${item.name}`, 10, 20);
+      doc.text(`Amount: $${item.price}`, 10, 30);
+      doc.text(`Date: ${item.quantity}`, 10, 40);
+      doc.text(`Status: ${item.name}`, 10, 50);
+
       doc.text(`Product: ${item.name}`, 10, y);
       y += 8;
       doc.text(`Quantity: ${item.quantity}`, 10, y);
@@ -52,5 +52,5 @@ function Invoice({ cartItems }) {
     </div>
   );
 }
-export const generateInvoice = generateInvoice;
+// export const generateInvoice = generateInvoice;
 export default Invoice;
