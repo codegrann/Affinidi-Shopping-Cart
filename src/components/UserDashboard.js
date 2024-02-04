@@ -2,7 +2,6 @@ import React, { useState, useContext } from "react";
 import UserContext from "../contexts/UserContext";
 import { useNavigate } from "react-router-dom";
 
-import PaypalButton from "./PaypalButton";
 import "./UserDashboard.css";
 
 function UserDashboard() {
@@ -56,7 +55,6 @@ function UserDashboard() {
           <input type="text" id="address" value={address} disabled></input>
         </label>
       </form>
-      <PaypalButton />
     </div>
   );
 }

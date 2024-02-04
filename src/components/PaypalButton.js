@@ -47,7 +47,8 @@ export default function Paypal({ totalAmount }) {
         ref={paypal}
         style={{
           height: "140px",
-          width: "35%",
+          width: "60%",
+          margin: "auto",
           overflowY: "hidden",
         }}
       ></div>
