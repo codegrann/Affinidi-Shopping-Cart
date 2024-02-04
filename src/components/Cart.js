@@ -1,8 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Invoice from "./Invoice";
 import "./Cart.css";
 
 const Cart = ({ cartItems }) => {
+  const [showInvoice, setShowInvoice] = useState(false);
   const navigate = useNavigate();
 
   const getTotalPrice = () => {
@@ -13,7 +16,8 @@ const Cart = ({ cartItems }) => {
   };
 
   const goToCheckout = () => {
-    navigate("/checkout");
+    setShowInvoice(true);
+    // navigate("/checkout");
   };
 
   return (
@@ -55,6 +59,7 @@ const Cart = ({ cartItems }) => {
       <button onClick={goToCheckout} disabled={cartItems.length === 0}>
         Go to Checkout
       </button>
+      {showInvoice && <Invoice cartItems={cartItems} />}
     </div>
   );
 };

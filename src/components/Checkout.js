@@ -127,11 +127,11 @@ const Checkout = ({ clearCart, cartItems }) => {
       </div>
       {showConfirmationModal && (
         <>
-          {<Invoice cartItems={cartItems} />}
-          {/* <ConfirmationModal
+          {/* {<Invoice cartItems={cartItems} />} */}
+          <ConfirmationModal
             closeModal={closeConfirmationModal}
             cartItems={cartItems}
-          /> */}
+          />
         </>
       )}
     </div>
