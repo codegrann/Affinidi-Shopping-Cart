@@ -28,10 +28,8 @@
 }
 
 .profile-img {
-  width: 150px;
+  width: 200px;
   margin: 0 auto;
-  /* text-align: center; */
-
   border-radius: 50%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
