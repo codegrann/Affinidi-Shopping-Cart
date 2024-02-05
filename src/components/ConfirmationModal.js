@@ -4,6 +4,7 @@ import PaypalButton from "./PaypalButton";
 import "./Modal.css";
 
 const ConfirmationModal = ({ closeModal, cartItems }) => {
+  console.log(cartItems);
   return (
     <div className="ModalOverlay">
       <div className="ConfirmationModal">
