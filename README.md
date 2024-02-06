@@ -11,16 +11,14 @@ check if logged in to show profile icon
 
 1. [Introduction](#1-introduction)
 2. [Setup for Developers](#2-setup-for-developers)
-   - 2.1 [Clone the repo](#21-clone-and-install)
-   - 2.2 [Initialize](#22-initialize)
-3. [Account in Affinidi Vault](#3-account-in-affinidi-vault)
-   - 3.1 [Install and create](#31-install-and-create)
-   - 3.2 [Browser Support](#32-browser-support)
-4. [New features](#4-new-feature)
-   - 4.1 [User Dashboard](#41-user-dashboard)
-   - 4.2 [Product Category](#42-product-category)
-   - 4.3 [Invoice generator](#43-invoice-generator)
-   - 4.4 [Footer](#43-footer)
+   - 2.1[Account in Affinidi Vault](#21-account-in-affinidi-vault)
+   - 2.2 [Clone the repo](#22-clone-and-install)
+   - 2.3 [Initialize](#23-initialize)
+3. [New features](#3-new-feature)
+   - 3.1 [User Dashboard](#31-user-dashboard)
+   - 3.2 [Product Category](#32-product-category)
+   - 3.3 [Invoice generator](#33-invoice-generator)
+   - 3.4 [Footer](#33-footer)
      <!-- 5. [Log Out Users](#5-log-out-users) -->
         <!-- - 5.1 [How to Log Out a User](#51-how-to-log-out-a-user) -->
         <!-- - 5.2 [Logout Modes](#52-logout-modes) -->
@@ -45,7 +43,19 @@ Affinidi Shopping Cart is a web application that utilizes the Affinidi Login ser
 
 For developers who wish to test the application locally, here are the prerequisites and steps to get started.
 
-### 2.1 Clone and install
+### 2.1 Account in Affinidi Vault
+
+To be able to use the login product, you will need to have an account in Affinidi Vault.
+
+#### Install and create
+
+Refer to [this link](https://chromewebstore.google.com/detail/affinidi-vault/fejpjjkbaklcdcibmkbmpanjbiihclon?pli=1) to install Affinidi Vault on your local machine. It comes as a browser extension. You will then follow prompts that will allow you create and an account.
+
+#### Browser Support
+
+Firefox is not supported and so it is adviced to use Chrome browser to install Affinidi Vault.
+
+### 2.2 Clone and install
 
 Navigate to your directory of choice and clone the repository using the following command. Ensure to have **git** installed in your system.
 
@@ -61,7 +71,7 @@ npm install
 
 Once again navigate to the **_server-app_** directory and run the same command above.
 
-### 2.2 Initialize
+### 2.3 Initialize
 
 Inside the **_server-app_** directory, run
 
@@ -73,20 +83,18 @@ to start the server.
 
 Also within the root folder, run the same command above to start the application on your localhost.
 
-## 3. Account in Affinidi Vault
+## 3. New Features
 
-### 3.1 Install and create
+Some of the features I added to the eccomerce application are discused below.
 
-### 3.2 Browser Support
+### 3.1 User Dashboard
 
-## 4. New Features
+There is an improvement to the site by introducing a user dashboard where each user can view their persoal info, ffoered by their vault credentials.
 
-### 4.1 User Dashboard
+### 3.2 Product Category
 
-### 4.2 Product Category
+### 3.3 Invoice generator
 
-### 4.3 Invoice generator
-
-### 4.4 Footer
+### 3.4 Footer
 
 ### Summary
