@@ -36,12 +36,42 @@ check if logged in to show profile icon
 
 ## 1. Introduction
 
+Affinidi plays a transformative role in the development of the decentralized identity ecosystem by reshaping digital identioty management within today's digital landscape. Being at the forefront of this change, Affinidi is driven by a vision to redefine how digital identities are managed and shared online through innovative solutions.
+By empowering individuals to take control of their digital identities and enabling businesses to leverage consumer data for personalized experiences while prioritizing privacy, Affinidi addresses the challenges posed by fragmented digital identities controlled by third-party or centralized providers. Through its tools, Affinidi enhances trust in digital interactions and adheres to global data protection standards, contributing to a more secure and user-centric digital identity landscape. Highlighted products such as Affinidi Login and Affinidi Vault exemplify the company's innovative approach to digital identity management, marking its crucial role in shaping the future of online identity authentication and privacy preservation.
+
+Affinidi Shopping Cart is a web application that utilizes the Affinidi Login service. It is a simple web application that allows users to login using their Affinidi Vault's credentials, add products to cart and checkout.
 
 ## 2. Setup for Developers
 
+For developers who wish to test the application locally, here are the prerequisites and steps to get started.
+
 ### 2.1 Clone and install
 
+Navigate to your directory of choice and clone the repository using the following command. Ensure to have **git** installed in your system.
+
+```bash
+git clone https://github.com/codegrann/Affinidi-Shopping-Cart.git
+```
+
+Then run the following commands to install the dependencies.
+
+```bash
+npm install
+```
+
+Once again navigate to the **_server-app_** directory and run the same command above.
+
 ### 2.2 Initialize
+
+Inside the **_server-app_** directory, run
+
+```bash
+npm start
+```
+
+to start the server.
+
+Also within the root folder, run the same command above to start the application on your localhost.
 
 ## 3. Account in Affinidi Vault
 
