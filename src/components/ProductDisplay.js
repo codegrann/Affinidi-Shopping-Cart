@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ProductDisplay.css";
 
+// Add more products and categories as you intend
 const ourProducts = [
   {
     id: 1,

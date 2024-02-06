@@ -57,6 +57,7 @@ const Header = () => {
             <span onClick={handleProfile}>Welcome, {profile.givenName}</span>
             <button onClick={logout}>Logout</button>
           </div>
+          {/* show profile icon when user is logged in */}
           <Link to="/profile" className="ProfileIcon">
             <img src="/profile.png" alt="profile status" />
           </Link>
@@ -77,9 +78,6 @@ const Header = () => {
         <Link to="/cart" className="CartIcon">
           <img src="/cart.png" alt="Cart" />
         </Link>
-        {/* <Link to="/profile" className="ProfileIcon"> */}
-        {/* <img src="/profile.png" alt="profile status" /> */}
-        {/* </Link> */}
       </nav>
     </header>
   );
