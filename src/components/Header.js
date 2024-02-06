@@ -52,10 +52,15 @@ const Header = () => {
     };
     if (profile) {
       return (
-        <div>
-          <span onClick={handleProfile}>Welcome, {profile.givenName}</span>
-          <button onClick={logout}>Logout</button>
-        </div>
+        <>
+          <div>
+            <span onClick={handleProfile}>Welcome, {profile.givenName}</span>
+            <button onClick={logout}>Logout</button>
+          </div>
+          <Link to="/profile" className="ProfileIcon">
+            <img src="/profile.png" alt="profile status" />
+          </Link>
+        </>
       );
     }
 
@@ -72,9 +77,9 @@ const Header = () => {
         <Link to="/cart" className="CartIcon">
           <img src="/cart.png" alt="Cart" />
         </Link>
-        <Link to="/profile" className="ProfileIcon">
-          <img src="/profile.png" alt="profile status" />
-        </Link>
+        {/* <Link to="/profile" className="ProfileIcon"> */}
+        {/* <img src="/profile.png" alt="profile status" /> */}
+        {/* </Link> */}
       </nav>
     </header>
   );
