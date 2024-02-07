@@ -24,11 +24,11 @@ function UserDashboard() {
     <div>
       <form className="user-info">
         <img src="/profile.png" className="profile-img" alt="profile image" />
-        {/* <img
-          src={userData.profileImg}
+        <img
+          src={userData.picture}
           className="profile-img"
           alt="profile image"
-        /> */}
+        />
         <label htmlFor="name">
           Full Name:
           <input type="text" id="name" value={fullName} disabled></input>

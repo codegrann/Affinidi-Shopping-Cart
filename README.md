@@ -91,16 +91,22 @@ Some of the features I added to the eccomerce application are discused below.
 
 There is an improvement to the site by introducing a user dashboard where each user can view their persoal info, offered by their vault credentials.
 Before a user logs in, the dashboard will not be visible and the link to the dashboard will also not be displyed. One will only be prompted to login.
+
 ![Before logging in](/public/previews/prelogin.png)
+
 After being logged in, an user icon appears in the header which redirects to the dashboard.
+
 ![After logging in](/public/previews/postlogin.png)
+
 When one navigates to the dashboard, they will be greeted with the interface below, where a user can only view their personal info but not able edit.
 ![Dashboard](/public/previews/profile.png)
 
 ### 3.2 Product Category
 
 I was able to implement a product category feature in the application which could help a user filter out products according to their preferences. The filter lies at the top of the page for ease of accessibility.
+
 ![category](/public/previews/category.png)
+
 I added more products to be able to demonstrate the feature, with each product having its category type. To be on point, my application has only to categories of products, **_"furniture"_** and **_"dressing"_**. Products will be displayed depending on the filter triggered.
 
 #### All products
@@ -121,10 +127,13 @@ One can move back and forth between the categories by clicking on the filter but
 It is a good practice to have the user get a copy of all the items they have ordered on the go. I implemented a invoice generator which generates and downloads a pdf file of the items the user has ordered, the price and quantity of each item together with the total price purchase. This is triggered in the cart page before one checks out.
 
 ![Invoice](/public/previews/invoice.png)
+
 Clicking the **_Generate Invoice_** button triggers a function that checks for the cart content and generate a pdf containing items details.
 ![Invoice download](/public/previews/invoicedownload.png)
+
 The pdf is locally stored in the user's device and can be opened in any pdf reader.
 ![Invoice preview](/public/previews/invoicepreview.png)
+
 One can thereafter go to checkout and make the purchase.
 
 ### 3.4 Footer
