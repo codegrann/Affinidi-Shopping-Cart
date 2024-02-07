@@ -99,10 +99,40 @@ When one navigates to the dashboard, they will be greeted with the interface bel
 
 ### 3.2 Product Category
 
-I was able to implement a product category feature in the application which could help a user filter out products accordig to preferences
+I was able to implement a product category feature in the application which could help a user filter out products according to their preferences. The filter lies at the top of the page for ease of accessibility.
+![category](/public/previews/category.png)
+I added more products to be able to demonstrate the feature, with each product having its category type. To be on point, my application has only to categories of products, **_"furniture"_** and **_"dressing"_**. Products will be displayed depending on the filter triggered.
+
+#### All products
+
+![All products](/public/previews/all.png)
+
+#### Dressing category
+
+![Dressings](/public/previews/dress.png)
+
+#### Furniture category
+
+![Furniture](/public/previews/furniture.png)  
+One can move back and forth between the categories by clicking on the filter button.
 
 ### 3.3 Invoice generator
 
+It is a good practice to have the user get a copy of all the items they have ordered on the go. I implemented a invoice generator which generates and downloads a pdf file of the items the user has ordered, the price and quantity of each item together with the total price purchase. This is triggered in the cart page before one checks out.
+
+![Invoice](/public/previews/invoice.png)
+Clicking the **_Generate Invoice_** button triggers a function that checks for the cart content and generate a pdf containing items details.
+![Invoice download](/public/previews/invoicedownload.png)
+The pdf is locally stored in the user's device and can be opened in any pdf reader.
+![Invoice preview](/public/previews/invoicepreview.png)
+One can thereafter go to checkout and make the purchase.
+
 ### 3.4 Footer
 
+One of good practices in web development is giving users easy access to quick links even after scrolling to the bottom of the page.
+I included dummy links to social media accounts and a list of services offered.
+![Footer](/public/previews/footer.png)
+
 ### Summary
+
+Apart from the vault, Affinidi also has a product, the [Affinidi Portal](https://go.stackup.dev/affinidi-portal). Affinidi Portal is an interactive interface enabling developers to manage resources like Projects and Login Configurations to integrate Affinidi Login into their application. Developers can view the billing and analytics, including tracking the usage of the services. Visit the [Affinidi docs](https://docs.affinidi.com/dev-tools/affinidi-portal/) to learn how to get started with a project in the portal.
