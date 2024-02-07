@@ -136,3 +136,5 @@ I included dummy links to social media accounts and a list of services offered.
 ### Summary
 
 Apart from the vault, Affinidi also has a product, the [Affinidi Portal](https://go.stackup.dev/affinidi-portal). Affinidi Portal is an interactive interface enabling developers to manage resources like Projects and Login Configurations to integrate Affinidi Login into their application. Developers can view the billing and analytics, including tracking the usage of the services. Visit the [Affinidi docs](https://docs.affinidi.com/dev-tools/affinidi-portal/) to learn how to get started with a project in the portal.
+
+Hope you have learnt from the reading and enjoyed the cool features I added to the application. Thank you.
