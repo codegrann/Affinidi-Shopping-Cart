@@ -89,9 +89,17 @@ Some of the features I added to the eccomerce application are discused below.
 
 ### 3.1 User Dashboard
 
-There is an improvement to the site by introducing a user dashboard where each user can view their persoal info, ffoered by their vault credentials.
+There is an improvement to the site by introducing a user dashboard where each user can view their persoal info, offered by their vault credentials.
+Before a user logs in, the dashboard will not be visible and the link to the dashboard will also not be displyed. One will only be prompted to login.
+![Before logging in](/public/previews/prelogin.png)
+After being logged in, an user icon appears in the header which redirects to the dashboard.
+![After logging in](/public/previews/postlogin.png)
+When one navigates to the dashboard, they will be greeted with the interface below, where a user can only view their personal info but not able edit.
+![Dashboard](/public/previews/profile.png)
 
 ### 3.2 Product Category
+
+I was able to implement a product category feature in the application which could help a user filter out products accordig to preferences
 
 ### 3.3 Invoice generator
 
