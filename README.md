@@ -83,7 +83,7 @@ to start the server.
 
 Also within the root folder, run the same command above to start the application on your localhost.
 
-## 3. New Features
+## 3. Added Features
 
 Some of the features I added to the eccomerce application are discused below.
 
