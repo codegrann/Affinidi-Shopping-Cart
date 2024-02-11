@@ -71,7 +71,7 @@ const Header = () => {
   return (
     <header className="Header">
       <Link to="/">
-        <h1>StackShop</h1>
+        <h1>CoShop</h1>
       </Link>
       <nav>
         {renderLoginState()}
