@@ -69,7 +69,7 @@ const ProductDisplay = ({ addToCart }) => {
   }
 
   return (
-    <div className="">
+    <div className="Products">
       <div className="category-filter">
         <label htmlFor="categry">Category:</label>
         <select

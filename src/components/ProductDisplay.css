@@ -1,3 +1,7 @@
+.Products {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 .ProductDisplay {
   display: flex;
   flex-direction: row;
